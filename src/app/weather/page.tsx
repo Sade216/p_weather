@@ -17,13 +17,12 @@ function WeatherPage() {
 
     useEffect(() => {
         const q = params.get("q");
-        if (!q) return 
-        else{
+        if (!q) return;
+        else {
             fetchGeoCode(q).then((res) => {
-                setCity({lat: res.geonames[0].lat, lon: res.geonames[0].lng})
+                setCity({ lat: res.geonames[0].lat, lon: res.geonames[0].lng });
             });
         }
-        
     }, [params]);
 
     return (
