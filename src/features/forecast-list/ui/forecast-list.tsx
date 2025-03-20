@@ -1,7 +1,7 @@
 "use client";
 
 import { ForecastResponse, Location } from "@/shared/model";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { fetchForecast } from "../api/api";
 
 import styles from "./forecast-list.module.css";
@@ -12,6 +12,7 @@ interface Props {
 }
 
 export function ForecastList({ location }: Props) {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [data, setData] = useState<ForecastResponse>();
 
     useEffect(() => {
@@ -21,10 +22,19 @@ export function ForecastList({ location }: Props) {
         });
     }, [location]);
 
+    const handleWheel = (e: React.WheelEvent) => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollLeft += e.deltaY * 2;
+        }
+    };
+
     return (
         <>
             {data && (
-                <div className={styles.Wrapper}>
+                <div
+                    className={styles.Wrapper}
+                    onWheel={handleWheel}
+                    ref={scrollContainerRef}>
                     {data.list.map((item, key) => (
                         <Card
                             key={key}
