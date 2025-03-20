@@ -1,0 +1,40 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: var(--foreground);
+    border-radius: 15px;
+    padding: 20px 10px;
+    min-width: 150px;
+    min-height: 250px;
+    text-align: center;
+}
+.Description{
+    font-size: 14px;
+    min-height: 40px;
+    align-content: center;
+}
+.Description::first-letter{
+    text-transform: capitalize;
+}
+.Temp{
+    justify-content: center;
+    font-size: 28px;
+}
+.Icon{
+    margin: 10px 0;
+}
+.Icon svg{
+    height: 50px;
+    width: 50px;
+}
+.Time{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.Date{
+    font-size: 14px;
+}

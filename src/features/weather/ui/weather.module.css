@@ -1,0 +1,15 @@
+.Main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--gap-xl);
+}
+
+.Link:hover{
+    color: var(--accent)
+}
+
+@media (max-width: 1024px) {
+    .Main {
+        grid-template-columns: 1fr;
+    }
+}

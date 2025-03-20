@@ -1,0 +1,18 @@
+.Wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.Label{
+    padding-right: 5px;
+}
+.Icon {
+    position: relative;
+    height: auto;
+    align-self: start;
+    width: 15px;
+}
+
+.Value{
+    display: flex;
+}

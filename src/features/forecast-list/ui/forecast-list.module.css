@@ -1,0 +1,29 @@
+.Description::first-letter {
+    text-transform: capitalize;
+}
+.Wrapper {
+    position: relative;
+    margin: var(--gap-xl) 0;
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-xl);
+    overflow-x: scroll;
+    /* scrollbar-width: none; */
+    scroll-snap-type: x mandatory;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+.Wrapper::-webkit-scrollbar {
+    height: 6px; /* Высота скроллбара */
+    opacity: 0;
+}
+
+.Wrapper::-webkit-scrollbar-thumb {
+    background: var(--foreground);
+    border-radius: 10px;
+}
+
+.Wrapper::-webkit-scrollbar-track {
+    background: transparent;
+    width: 80%;
+}

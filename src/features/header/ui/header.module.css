@@ -1,0 +1,23 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+.Links{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-xl);
+}
+.LeftBar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.LeftBar button{
+    display: flex;
+    background-color: var(--accent);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}

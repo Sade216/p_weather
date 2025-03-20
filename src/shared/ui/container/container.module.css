@@ -1,0 +1,12 @@
+.Container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--xxl);
+    padding: 0;
+}
+
+@media (max-width: 1280px) {
+    .Container{
+        padding: 0 25px;
+    }
+}

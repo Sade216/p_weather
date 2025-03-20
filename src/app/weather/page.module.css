@@ -1,0 +1,16 @@
+.Wrapper{
+    margin: 25px 0;
+}
+.Error {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+    gap: 15px;
+    text-align: center;
+    width: 400px;
+    text-wrap-style: balance;
+}
+.ErrorResponse {
+    color: var(--text-secondary);
+}
