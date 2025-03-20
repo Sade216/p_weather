@@ -9,7 +9,7 @@
     gap: var(--gap-xl);
     overflow-x: scroll;
     /* scrollbar-width: none; */
-    /* scroll-snap-type: x mandatory; */
+    scroll-snap-type: x mandatory;
     border-radius: 15px;
     padding-bottom: 5px;
     scroll-behavior: smooth;
