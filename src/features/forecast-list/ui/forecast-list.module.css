@@ -12,7 +12,6 @@
     scroll-snap-type: x mandatory;
     border-radius: 15px;
     padding-bottom: 5px;
-    scroll-behavior: smooth;
 }
 .Wrapper::-webkit-scrollbar {
     height: 6px; /* Высота скроллбара */
